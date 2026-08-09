@@ -1,7 +1,7 @@
 const products = [
-  {id:1,name:"Essential Oversized Tee",cat:"T-Shirts",price:899,tag:"Trending",color:"",desc:"A relaxed everyday silhouette in soft premium cotton.",img:"images/brown-shirt.jpg"},
-  {id:2,name:"Classic Oxford Shirt",cat:"Shirts",price:1499,tag:"New",desc:"A clean, versatile shirt made for smart-casual days.",img:"images/graphic-tshirt.jpg"},
-  {id:3,name:"Relaxed Cargo Pant",cat:"Bottoms",price:1799,tag:"Trending",desc:"Utility-inspired cargo pants with a relaxed fit.",img:"images/grey-shirt.jpg"},
+  {id:1,name:"Essential Oversized Tee",cat:"T-Shirts",price:899,tag:"Trending",color:"",desc:"A relaxed everyday silhouette in soft premium cotton.",img:"brown-shirt.jpg"},
+  {id:2,name:"Classic Oxford Shirt",cat:"Shirts",price:1499,tag:"New",desc:"A clean, versatile shirt made for smart-casual days.",img:"graphic-tshirt.jpg"},
+  {id:3,name:"Relaxed Cargo Pant",cat:"Bottoms",price:1799,tag:"Trending",desc:"Utility-inspired cargo pants with a relaxed fit.",img:"grey-shirt.jpg"},
   {id:4,name:"Minimal Logo Tee",cat:"T-Shirts",price:799,tag:"New",desc:"Minimal branding and a comfortable regular fit.",img:"blue"},
   {id:5,name:"Textured Resort Shirt",cat:"Shirts",price:1599,tag:"Trending",desc:"Lightweight textured shirt for effortless summer looks.",img:"beige"},
   {id:6,name:"Straight Fit Denim",cat:"Bottoms",price:1899,tag:"New",desc:"A timeless straight-leg denim with a modern finish.",img:"alt"},
