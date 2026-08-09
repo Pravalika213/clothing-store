@@ -6,7 +6,7 @@ const products = [
     price: 1599,
     tag: "New",
     desc: "A stylish brown casual shirt with a comfortable everyday fit.",
-    img: "brown-shirt.jpg"
+    img: "black-tshirt.jpeg"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     price: 899,
     tag: "Trending",
     desc: "A stylish graphic layered T-shirt designed for a modern casual look.",
-    img: "graphic-tshirt.jpg"
+    img: "blue-shirt.jpeg"
   },
   {
     id: 3,
@@ -24,8 +24,17 @@ const products = [
     price: 1499,
     tag: "New",
     desc: "A clean and versatile grey shirt suitable for smart-casual styling.",
-    img: "grey-shirt.jpg"
-  }
+    img: "bottom.jpeg"
+  },
+   {
+    id: 4,
+    name: "Classic Grey Shirt",
+    cat: "Shirts",
+    price: 1499,
+    tag: "New",
+    desc: "A clean and versatile grey shirt suitable for smart-casual styling.",
+    img: "brown-shirt.jpeg"
+  },
 ];
 
 let cart = JSON.parse(localStorage.getItem("veloraCart") || "[]");
