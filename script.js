@@ -1,14 +1,31 @@
 const products = [
-  {id: 1,name:"Brown Casual Shirt",cat:"Shirts",price:1599,tag:"New",desc:"A stylish brown casual shirt with a comfortable everyday fit.",img:"brown-shirt.jpg"},
-  {id:4,name:"Minimal Logo Tee",cat:"T-Shirts",price:799,tag:"New",desc:"Minimal branding and a comfortable regular fit.",img:"blue"},
-  {id:5,name:"Textured Resort Shirt",cat:"Shirts",price:1599,tag:"Trending",desc:"Lightweight textured shirt for effortless summer looks.",img:"beige"},
-  {id:6,name:"Straight Fit Denim",cat:"Bottoms",price:1899,tag:"New",desc:"A timeless straight-leg denim with a modern finish.",img:"alt"},
-  {id:7,name:"Heavyweight Street Tee",cat:"T-Shirts",price:999,tag:"Trending",desc:"Structured heavyweight cotton with a streetwear fit.",img:""},
-  {id:8,name:"Everyday Linen Shirt",cat:"Shirts",price:1699,tag:"New",desc:"Breathable linen blend designed for everyday comfort.",img:"blue"},
-  {id:9,name:"Relaxed Jogger",cat:"Bottoms",price:1299,tag:"Trending",desc:"Soft, relaxed joggers for travel and everyday wear.",img:""},
-  {id:10,name:"Contrast Pocket Tee",cat:"T-Shirts",price:949,tag:"New",desc:"A contemporary tee with a subtle contrast detail.",img:"alt"},
-  {id:11,name:"Overshirt Jacket",cat:"Shirts",price:1999,tag:"Trending",desc:"A versatile overshirt that layers effortlessly.",img:"beige"},
-  {id:12,name:"Wide Leg Trouser",cat:"Bottoms",price:1699,tag:"New",desc:"Relaxed wide-leg trousers with a clean drape.",img:"blue"}
+  {
+    id: 1,
+    name: "Brown Casual Shirt",
+    cat: "Shirts",
+    price: 1599,
+    tag: "New",
+    desc: "A stylish brown casual shirt with a comfortable everyday fit.",
+    img: "brown-shirt.jpg"
+  },
+  {
+    id: 2,
+    name: "Graphic Layered T-Shirt",
+    cat: "T-Shirts",
+    price: 899,
+    tag: "Trending",
+    desc: "A stylish graphic layered T-shirt designed for a modern casual look.",
+    img: "graphic-tshirt.jpg"
+  },
+  {
+    id: 3,
+    name: "Classic Grey Shirt",
+    cat: "Shirts",
+    price: 1499,
+    tag: "New",
+    desc: "A clean and versatile grey shirt suitable for smart-casual styling.",
+    img: "grey-shirt.jpg"
+  }
 ];
 
 let cart = JSON.parse(localStorage.getItem("veloraCart") || "[]");
@@ -19,17 +36,17 @@ const $$ = s => document.querySelectorAll(s);
 const money = n => `₹${n.toLocaleString("en-IN")}`;
 
 function imageHTML(p, mini=false){
-  const sizeClass = mini ?
-"mini-img" : "product-image";
-  return '
+  const sizeClass = mini ? "mini-img" : "product-image";
+
+  return `
     <div class="${sizeClass}">
       <img
-       src="images/${p.img}"
-       alt="${p.name}"
-       loading="lazy"
-    >
-  </div>
-';              
+        src="images/${p.img}"
+        alt="${p.name}"
+        loading="lazy"
+      >
+    </div>
+  `;
 }
 
 function card(p){
