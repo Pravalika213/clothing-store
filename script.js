@@ -20,7 +20,7 @@ const products = [
   {
     id: 3,
     name: "Classic Grey Shirt",
-    cat: "Bottom",
+    cat: "Bottoms",
     price: 1499,
     tag: "New",
     desc: "A clean and versatile grey Bottom suitable for smart-casual styling.",
