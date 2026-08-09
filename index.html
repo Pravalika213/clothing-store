@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VELORA — modern clothing, trending 2026 styles, new arrivals, shirts, t-shirts and bottoms.">
+  <title>VELORA — Define Your Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="VELORA home">VELORA<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#trending">Trending 2026</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#tshirts">T-Shirts</a>
+      <a href="#shirts">Shirts</a>
+      <a href="#bottoms">Bottoms</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchBtn" aria-label="Search">⌕</button>
+      <button id="wishlistBtn" aria-label="Wishlist">♡ <small id="wishCount">0</small></button>
+      <button id="cartBtn" aria-label="Cart">🛍 <small id="cartCount">0</small></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW SEASON / 2026</p>
+        <h1>Define<br><em>Your Style.</em></h1>
+        <p>Discover effortless everyday pieces designed for the way you move.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-dark" href="#trending">Shop Trending</a>
+          <a class="btn btn-light" href="#new">New Arrivals</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Fashion collection visual">
+        <div class="model-shape"></div>
+        <span>VELORA / 26</span>
+      </div>
+    </section>
+
+    <section class="section" id="trending">
+      <div class="section-head">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Trending 2026</h2></div>
+        <button class="text-btn" data-category="all">View all →</button>
+      </div>
+      <div class="product-grid" id="trendingGrid"></div>
+    </section>
+
+    <section class="section soft" id="new">
+      <div class="section-head">
+        <div><p class="eyebrow">JUST DROPPED</p><h2>New Arrivals</h2></div>
+        <button class="text-btn" data-category="new">Shop new →</button>
+      </div>
+      <div class="product-grid" id="newGrid"></div>
+    </section>
+
+    <section class="category-banner">
+      <div class="category-card tall" data-category="T-Shirts"><span>T-Shirts</span><a href="#tshirts">Explore →</a></div>
+      <div class="category-card" data-category="Shirts"><span>Shirts</span><a href="#shirts">Explore →</a></div>
+      <div class="category-card" data-category="Bottoms"><span>Bottoms</span><a href="#bottoms">Explore →</a></div>
+    </section>
+
+    <section class="section" id="tshirts">
+      <div class="section-head"><div><p class="eyebrow">EVERYDAY ESSENTIALS</p><h2>T-Shirts</h2></div></div>
+      <div class="product-grid" id="tshirtGrid"></div>
+    </section>
+
+    <section class="section soft" id="shirts">
+      <div class="section-head"><div><p class="eyebrow">SMART / CASUAL</p><h2>Shirts</h2></div></div>
+      <div class="product-grid" id="shirtGrid"></div>
+    </section>
+
+    <section class="section" id="bottoms">
+      <div class="section-head"><div><p class="eyebrow">BUILT TO MOVE</p><h2>Bottoms</h2></div></div>
+      <div class="product-grid" id="bottomGrid"></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">JOIN VELORA</p>
+      <h2>First access to new drops.</h2>
+      <p>Subscribe for new arrivals, exclusive offers and fashion updates.</p>
+      <form id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Your email address" required>
+        <button class="btn btn-dark" type="submit">Subscribe</button>
+      </form>
+      <small id="newsletterMsg"></small>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="logo" href="#home">VELORA<span>.</span></a><p>Define your style.</p></div>
+    <div><h4>Shop</h4><a href="#trending">Trending 2026</a><a href="#new">New Arrivals</a><a href="#tshirts">T-Shirts</a><a href="#shirts">Shirts</a><a href="#bottoms">Bottoms</a></div>
+    <div><h4>Help</h4><a href="#">Contact Us</a><a href="#">Shipping & Delivery</a><a href="#">Returns & Refunds</a><a href="#">FAQ</a></div>
+    <div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+    <div class="copyright">© 2026 VELORA. All rights reserved.</div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h3>Your Bag</h3><button class="close" data-close>×</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+    <button class="btn btn-dark full" id="checkoutBtn">Proceed to Checkout</button>
+  </aside>
+
+  <aside class="drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-head"><h3>Wishlist</h3><button class="close" data-close>×</button></div>
+    <div id="wishItems"></div>
+  </aside>
+
+  <div class="search-panel" id="searchPanel">
+    <button class="close" id="closeSearch">×</button>
+    <p class="eyebrow">SEARCH VELORA</p>
+    <input id="searchInput" type="search" placeholder="Search t-shirts, shirts, bottoms...">
+    <div id="searchResults" class="product-grid"></div>
+  </div>
+
+  <div class="modal" id="productModal">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
