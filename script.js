@@ -19,7 +19,17 @@ const $$ = s => document.querySelectorAll(s);
 const money = n => `₹${n.toLocaleString("en-IN")}`;
 
 function imageHTML(p, mini=false){
-  return `<div class="${mini?'mini-img':'product-image'} ${p.img||''}"><div class="shape"></div></div>`;
+  const sizeClass = mini ?
+"mini-img" : "product-image";
+  return '
+    <div class="${sizeClass}">
+      <img
+       src="images/${p.img}"
+       alt="${p.name}"
+       loading="lazy"
+    >
+  </div>
+';              
 }
 
 function card(p){
