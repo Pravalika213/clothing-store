@@ -2,28 +2,28 @@ const products = [
   {
     id: 1,
     name: "Brown Casual Shirt",
-    cat: "Shirts",
+    cat: "T-Shirts",
     price: 1599,
     tag: "New",
-    desc: "A stylish brown casual shirt with a comfortable everyday fit.",
+    desc: "A stylish black trendy t shirt with a comfortable everyday fit.",
     img: "black-tshirt.jpeg"
   },
   {
     id: 2,
     name: "Graphic Layered T-Shirt",
-    cat: "T-Shirts",
+    cat: "Shirts",
     price: 899,
     tag: "Trending",
-    desc: "A stylish graphic layered T-shirt designed for a modern casual look.",
+    desc: "A stylish graphic layered Shirt designed for a modern casual look.",
     img: "blue-shirt.jpeg"
   },
   {
     id: 3,
     name: "Classic Grey Shirt",
-    cat: "Shirts",
+    cat: "Bottom",
     price: 1499,
     tag: "New",
-    desc: "A clean and versatile grey shirt suitable for smart-casual styling.",
+    desc: "A clean and versatile grey Bottom suitable for smart-casual styling.",
     img: "bottom.jpeg"
   },
    {
@@ -32,7 +32,7 @@ const products = [
     cat: "Shirts",
     price: 1499,
     tag: "New",
-    desc: "A clean and versatile grey shirt suitable for smart-casual styling.",
+    desc: "A clean and versatile Brown shirt suitable for smart-casual styling.",
     img: "brown-shirt.jpeg"
   },
 ];
